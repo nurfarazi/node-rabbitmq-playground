@@ -6,7 +6,6 @@ package-lock.json
 dist/
 
 # Environment variables
-.env
 
 # Logs
 npm-debug.log*
@@ -14,7 +13,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # IDE / Editor
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -22,3 +20,4 @@ yarn-error.log*
 # OS
 .DS_Store
 Thumbs.db
+config.bat
