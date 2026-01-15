@@ -1,0 +1,42 @@
+### Get Health
+GET http://localhost:3000/
+
+### 1. Insert Document (Async)
+POST http://localhost:3000/documents
+Content-Type: application/json
+
+{
+    "title": "RabbitMQ for Dummies",
+    "content": "Learn how to use message brokers efficiently.",
+    "tags": ["rabbitmq", "tutorial", "messaging"]
+}
+
+### 2. Insert Another Document (Async)
+POST http://localhost:3000/documents
+Content-Type: application/json
+
+{
+    "title": "MongoDB Basics",
+    "content": "A guide to getting started with NoSQL databases.",
+    "tags": ["mongodb", "database", "nosql"]
+}
+
+### 3. Query All Documents
+GET http://localhost:3000/documents
+
+### 4. Query Documents with Filter (Title)
+GET http://localhost:3000/documents?title=RabbitMQ
+
+### 5. Query Documents with Filter (Tag)
+GET http://localhost:3000/documents?tag=nosql
+
+### 6. Update Document (Async)
+# Note: Replace {ID} with an actual ID from the GET request
+PUT http://localhost:3000/documents/{ID}
+Content-Type: application/json
+
+{
+    "title": "Advanced RabbitMQ",
+    "content": "Deep dive into clustering and high availability.",
+    "tags": ["rabbitmq", "advanced", "HA"]
+}
